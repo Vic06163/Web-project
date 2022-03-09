@@ -1,0 +1,42 @@
+footer {
+    background-color: rgb(75, 29, 72);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+}
+
+h3 {
+    margin-left: 40px;
+}
+
+body{
+
+    background-image: 
+    
+  linear-gradient(to bottom, rgba(62, 152, 168, 0.5), rgba(62, 152, 168, 0.5)),
+    url(pictures/background.jpg);
+    
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    
+    
+
+}
+
+/* .color {
+    background-color: aqua;
+    
+}
+
+.background {
+    opacity: 7%;
+    background-image: url(pictures/background.jpg);
+}
+
+ */
