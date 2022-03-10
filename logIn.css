@@ -1,7 +1,15 @@
-/*body*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-body {
+body{
+    font-family: 'Lato', sans-serif;
     background-color: rgb(164, 208, 214);
+    padding: 0;
+    margin: 0;
+    color:rgb(61, 41, 80);
+}
+
+body .page{
+    margin: 20px 80px;
 }
 
 .logoCompany {
