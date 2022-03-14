@@ -6,31 +6,21 @@ body{
     padding: 0;
     margin: 0;
     color:rgb(61, 41, 80);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-body .page{
-    margin: 20px 80px;
-}
-
-.logoCompany {
+.logo {
     display: flex;
     justify-content: center;   
     margin-top: 50px;
+    
 }
 
-.bodyElements {
+.welcome {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-    font-weight: bold;
-    margin-top: 60px;
-    color: rgb(61, 41, 80);
-
-}
-
-label {
-    font-size: 20px;
+    justify-content: center;
 }
 
 #textbox {
