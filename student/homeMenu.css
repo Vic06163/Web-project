@@ -1,4 +1,85 @@
-/* test gael */
-/* test vic */
-/* test nicolas */
-/* test vic 667*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*  nav  */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pictureNav{
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/*  menu  */
+
+.menu{
+    font-size: xx-large;
+    background-color: rgb(61, 41, 80);
+    margin-top: 1%;   
+}
+
+.menu li{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.menu li a{
+    display: block;
+    padding: 20px;
+}
+
+.menu li a:hover{
+    background-color: #197D8A;
+}
+
+.hiddenCandidacy{
+    display: none;
+    position: absolute;
+}
+
+.menu li:hover .hiddenCandidacy{
+    display: block;
+}
+
+
+
+.hiddenStudent{
+    display: none;
+    position: absolute;
+}
+
+.hiddenClassPresident{
+    display: none;
+    position: absolute;
+}
+
+.hiddenInternshipOffer{
+    display: none;
+    position: absolute;
+}
+
+.hiddenCompany{
+    display: none;
+    position: absolute;
+}
+
+
