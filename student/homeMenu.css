@@ -33,53 +33,38 @@ nav{
 .menu{
     font-size: xx-large;
     background-color: rgb(61, 41, 80);
-    margin-top: 1%;   
+    margin-top: 1%;
 }
 
 .menu li{
     display: inline-block;
-    vertical-align: top;
     position: relative;
 }
 
 .menu li a{
     display: block;
     padding: 20px;
+    color: white;
 }
 
-.menu li a:hover{
+.menu li:hover a{
     background-color: #197D8A;
 }
 
-.hiddenCandidacy{
+.hidden{
     display: none;
     position: absolute;
-}
+    font-size: medium;
+} 
 
-.menu li:hover .hiddenCandidacy{
+.menu li:hover .hidden{
     display: block;
 }
 
-
-
-.hiddenStudent{
-    display: none;
-    position: absolute;
+.hidden li:hover a{
+    background-color: white;
+    color:#2c94a1;
 }
 
-.hiddenClassPresident{
-    display: none;
-    position: absolute;
-}
-
-.hiddenInternshipOffer{
-    display: none;
-    position: absolute;
-}
-
-.hiddenCompany{
-    display: none;
-    position: absolute;
-}
 
 
