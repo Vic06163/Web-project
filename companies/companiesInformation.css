@@ -23,7 +23,8 @@ header{
 
 .nomPrenom{
     font-family: 'Lato', sans-serif;
-    margin-top: 23px;
+    display: flex;
+    vertical-align: baseline;
     color:#197D8A;
     padding-left: 5px;
 }
@@ -42,36 +43,66 @@ header{
 
 /*Body*/
 
-.ecran{
+/* div#ecran{
     display: flex;
     flex-direction: row;
-}
+} */
 
-.espace1{
+div#espace1{
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    background-color: crimson;
+    height: 20%;
 }
 
 .retourMenu{
     font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: row; 
-    background-color: rgb(61, 41, 80);
+    width: 110%;
+    color: #3D2950;
+    font-size: 200%;
+    font-weight: bold;
+    margin: 5% 5% 5% 5%;
 }
 
-.espace2{
+div#espace2{
     display: flex;
     flex-direction: row; 
+    height: 25%;
 }
 
-.espace3{
+div#maps{
     display: flex;
     flex-direction: row; 
+    background-color: coral;
+    width: 50%;
 }
 
-.espace4{
+.maps_image{
+    height: 15%;
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.adresse{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lato', sans-serif;
+    vertical-align: middle;
+}
+
+div#espace3{
     display: flex;
     flex-direction: row; 
+    height: 25%;
+}
+
+div#espace4{
+    display: flex;
+    flex-direction: row; 
+    height: 25%;
 }
 
 /*Footer*/
