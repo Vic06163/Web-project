@@ -123,13 +123,28 @@ footer{
     margin-right: 2%;
 }
 
-/*  body  */
+/*  body / tuto part */
 
-.tuto button{
-    display: block;
+.tuto input{
     width: 20%;
-    height: 20px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: hidden;
+    margin: 1%;
+    font-size: large;
+    color: #197D8A;
 }
+
+.tuto{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image1{
+    filter: hue-rotate(120deg);
+}
+
+
 
 
 
