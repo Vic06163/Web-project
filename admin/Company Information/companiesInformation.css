@@ -135,7 +135,7 @@ header{
     margin-left: 2%; 
     margin-right: 2%;
     height: 20%;
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(224, 224, 224);
     text-align: left;
     border-radius: 10px;
 }
@@ -148,6 +148,11 @@ header{
     font-family: 'Lato', sans-serif;
     justify-content: center;
     align-items: center;
+}
+
+.rating{
+    display: flex; 
+    flex-direction: column;
 }
 
 .espace4{
