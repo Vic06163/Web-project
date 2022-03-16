@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body{
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+    align-content: space-around;
 }
 
 /*Header*/
@@ -26,7 +29,8 @@ header{
 .nomPrenom{
     font-family: 'Lato', sans-serif;
     display: flex;
-    vertical-align: baseline;
+    justify-content: center;
+    align-items: center;
     color:#197D8A;
     padding-left: 5px;
 }
@@ -50,58 +54,106 @@ header{
     flex-direction: row;
 } */
 
-div#espace1{
+.espace1{
     display: flex;
     flex-direction: row;
-    background-color: crimson;
-    height: 20%;
+    min-height: 25%;
 }
 
 .retourMenu{
     font-family: 'Lato', sans-serif;
-    display: flex;
-    flex-direction: row; 
     width: 110%;
     color: #3D2950;
     font-size: 200%;
     font-weight: bold;
     margin: 5% 5% 5% 5%;
+    height: 100%;
 }
 
-div#espace2{
+.espace2{
     display: flex;
     flex-direction: row; 
     height: 25%;
 }
 
-div#maps{
+.maps{
     display: flex;
     flex-direction: row; 
-    background-color: red;
     width: 50%;
 }
 
-.map_image{
+.mapimageflex{
     display: flex;
-    width: 10%;
+    width: 50%;
+    justify-content: center;
+    align-self: center;
 }
 
-.adresse{
+.mapimage{
+    max-height: 10em;
+    width: auto;       
+}
+
+.textinfo{
     display: flex;
+    width: 50%;
     font-family: 'Lato', sans-serif;
-    vertical-align: middle;
+    align-items: center;
 }
 
-div#espace3{
+.stonks{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.stonksimageflex{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-self: center;
+}
+
+.stonksimage{
+    max-height: 15em;
+    width: auto;    
+}
+
+.espace3{
     display: flex;
     flex-direction: row; 
     height: 25%;
 }
 
-div#espace4{
+.infocompany{
     display: flex;
-    flex-direction: row; 
-    height: 25%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 66%;
+    margin-left: 2%; 
+    margin-right: 2%;
+    height: 20%;
+    background-color: rgb(204, 204, 204);
+    text-align: left;
+    border-radius: 10px;
+}
+
+.textinfobox{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.espace4{
+    display: flex;
+    flex-direction: row;
+    height: 25%; 
 }
 
 /*Footer*/
