@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 70px;
-    padding: 0;
     background-color: rgb(224, 224, 224);       
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    background-color: rgb(255, 255, 255);
-    padding: 0;
-    margin: 0;
-    color:rgb(61, 41, 80);
 }
 
 .headerDroite{
@@ -25,7 +25,8 @@ body {
 
 .nomPrenom{
     font-family: 'Lato', sans-serif;
-    margin-top: 23px;
+    display: flex;
+    vertical-align: baseline;
     color:#197D8A;
     padding-left: 5px;
 }
@@ -42,16 +43,65 @@ body {
     border-radius: 50%;
 }
 
-label {
-    font-size: 20px;
+/*Body*/
+
+/* div#ecran{
+    display: flex;
+    flex-direction: row;
+} */
+
+div#espace1{
+    display: flex;
+    flex-direction: row;
+    background-color: crimson;
+    height: 20%;
 }
 
-#textbox {
-    font-size: 20px;
-    width: 350px;
-    margin-bottom: 20px;
-    border-width: 3px;
-    border-color: rgb(61, 41, 80);
+.retourMenu{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: row; 
+    width: 110%;
+    color: #3D2950;
+    font-size: 200%;
+    font-weight: bold;
+    margin: 5% 5% 5% 5%;
+}
+
+div#espace2{
+    display: flex;
+    flex-direction: row; 
+    height: 25%;
+}
+
+div#maps{
+    display: flex;
+    flex-direction: row; 
+    background-color: red;
+    width: 50%;
+}
+
+.map_image{
+    display: flex;
+    width: 10%;
+}
+
+.adresse{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    vertical-align: middle;
+}
+
+div#espace3{
+    display: flex;
+    flex-direction: row; 
+    height: 25%;
+}
+
+div#espace4{
+    display: flex;
+    flex-direction: row; 
+    height: 25%;
 }
 
 /*Footer*/
@@ -70,6 +120,7 @@ footer {
 }
 
 .textEnd{
+    font-family: 'Lato', sans-serif;
     margin: 20px;
 }
 
