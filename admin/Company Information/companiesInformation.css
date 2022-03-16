@@ -57,7 +57,8 @@ header{
 .espace1{
     display: flex;
     flex-direction: row;
-    min-height: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .retourMenu{
@@ -121,7 +122,7 @@ header{
 
 .espace3{
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     height: 25%;
 }
 
@@ -153,6 +154,18 @@ header{
 .rating{
     display: flex; 
     flex-direction: column;
+    align-items: center;
+}
+
+.ratingstar{
+    display: flex;
+    justify-content: center;
+}
+
+.ratingtext{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
 }
 
 .espace4{
@@ -163,34 +176,49 @@ header{
 
 /*Footer*/
 
-footer {
-    display: flex;
-    flex-direction: row;
+footer{
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100px;
     bottom: 0;
-    background-color: rgb(61, 41, 80);
     position: absolute;
-    color: white;
-}
-
-.textEnd{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(61, 41, 80);
+    color:white;
+    align-items: flex-end;
     font-family: 'Lato', sans-serif;
-    margin: 20px;
 }
 
-.footerElements {
+.left{
     display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.text{
+    font-weight: bolder;
+}
+
+.footerSocialMedia{
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    margin-top: 3%;
 }
 
-#logoInstagram {
-    margin-left: 40px
+.footerSocialMedia a{
+    margin-left: 2%;
 }
 
-#logoLinkedin {
-    margin-left: 40px
+.footerServices {
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+}
+
+.footerServices a{
+    color: gray;
+    margin-right: 2%;
 }
 
