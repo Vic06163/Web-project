@@ -9,6 +9,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    color: rgb(61, 41, 80);
 }
 
 .mainclass{
@@ -56,6 +57,22 @@ header{
     padding: 15px;
     max-height: 60%;
     border-radius: 50%;
+}
+
+/*Body*/
+
+.espace1{
+    height: auto;
+}
+
+.retourMenu{
+    font-family: 'Lato', sans-serif;
+    width: 110%;
+    color: rgb(61, 41, 80);
+    font-size: 200%;
+    font-weight: bold;
+    align-self: center;
+    padding-left: 5%;
 }
 
 /*Footer*/
