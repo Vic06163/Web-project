@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+
 body{
-    font-family: 'Lato', sans-serif;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
     margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: rgb(61, 41, 80);
+}
+
+.mainclass{
+    min-height: 100%;
+    max-width: 100%;
 }
 
 a{
@@ -46,6 +57,22 @@ header{
     padding: 15px;
     max-height: 60%;
     border-radius: 50%;
+}
+
+/*Body*/
+
+.espace1{
+    height: auto;
+}
+
+.retourMenu{
+    font-family: 'Lato', sans-serif;
+    width: 110%;
+    color: rgb(61, 41, 80);
+    font-size: 200%;
+    font-weight: bold;
+    align-self: center;
+    padding-left: 5%;
 }
 
 /*Footer*/
