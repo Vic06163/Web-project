@@ -49,7 +49,7 @@ h2, h3{
     margin-bottom: 3%;
 }
 
-.e-mailtextbox, .passwordtextbox, .signinbutton{
+.e-mailtextbox, .passwordtextbox{
     display: flex;
     flex-direction: column;
 }
@@ -57,14 +57,31 @@ h2, h3{
 h4{
     margin-top: 4%;
     margin-bottom: 0%;
+    margin-left: 5%;
 }
 
-input{
-    background-color: black;
-    border-color: blueviolet;
+#password, #e-mail{
+    background-color: white;
+    border-color: rgb(61, 41, 80);
+    border-radius: 5px;
+    border-width: 2px;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 2em;
+
 }
 
+.signinbutton{
+    margin-top:2%;
+    display: flex;
+    justify-content: center;
 
+}
+
+.signin{
+    border-color: rgb(61, 41, 80);
+    background-color: white;
+}
 
 
 #textbox {
@@ -102,8 +119,9 @@ footer {
     height: 100px;
     bottom: 0;
     background-color: rgb(61, 41, 80);
-    position: absolute;
+    position: fixed;
     color: white;
+    align-items: flex-end;  
 }
 
 .textEnd{
