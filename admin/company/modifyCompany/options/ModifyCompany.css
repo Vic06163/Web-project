@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.mainclass{
+    min-height: 100vh;
+    max-width: 100vh;
+}
+
+.mainbody{
+    display: flex;
+    flex-direction: column;
+    min-height: 71vh;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+::placeholder{
+    font-family: 'Lato', sans-serif;
+}
+
+/*header*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 7vh;
+    background-color: rgb(224, 224, 224);       
+}
+
+.headerDroite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nomPrenom{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(25, 125, 138);
+    padding-left: 5px;
+}
+
+.logoCompany {
+    padding: 10px;
+    max-height: 70%;
+    width: auto;
+}
+
+.profileButton {
+    padding: 15px;
+    max-height: 60%;
+    border-radius: 50%;
+}
+
+/*body*/
+
+.optionchoosen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    height: 5vh;
+}
+
+.formbox{
+    display: flex;
+    justify-content: center;
+    min-width: 80vh;
+    height: 66vh;
+}
+
+.formform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+textarea{
+    justify-content: center;
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    bottom: 0;
+    min-height: 22vh;
+    position: relative;
+    background-color: rgb(61, 41, 80);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.footertop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.texttop{
+    font-size: x-large;
+    font-weight: 500;
+    align-self: center;
+}
+
+.footersocials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footersocialsstuff{
+    display: flex;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.footerbottom{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.footerbottomtext{
+    text-decoration: none;
+    display: flex;
+    width: 18%;
+    justify-content: center;
+    font-size: large;
+    font-weight: 600;
+    padding: 7px;
+    border-radius: 10px;
+    color: rgb(61, 41, 80);
+    background-color: rgb(224, 224, 224); 
+}
