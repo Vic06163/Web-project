@@ -5,6 +5,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
+    position: relative;
     height: 50em;
     width: 100%;
     margin: 0;
@@ -21,14 +22,22 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 70px;
     background-color: rgb(224, 224, 224);       
+}
+
+.logoCompany img{
+    height: 60px;
+    width: 290px;
+    margin-left: 40px;
 }
 
 .headerDroite{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-right: 40px;
 }
 
 .nomPrenom{
@@ -36,19 +45,12 @@ header{
     justify-content: center;
     align-items: center;
     color:rgb(25, 125, 138);
-    padding-left: 5px;
+    padding-right: 10px;
 }
 
-.logoCompany {
-    padding: 10px;
-    max-height: 70%;
-    width: auto;
-}
-
-.profileButton {
-    padding: 15px;
-    max-height: 60%;
-    border-radius: 50%;
+.profileButton img{
+    height: 50px;
+    width: 50px;
 }
 
 /*Body*/
@@ -100,6 +102,13 @@ header{
     outline: 0;
     background-color: rgb(224, 224, 224);
     font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: rgb(150, 150, 150);
+}
+
+.input-search input::placeholder{
+    color: rgb(150, 150, 150);
+
 }
 
 .main-title{
@@ -120,6 +129,7 @@ header{
 .table-title{
     color: rgb(61, 41, 80);
     font-size: x-large;
+    padding: 1% 5% 1%;
 }
 
 .table-results{
@@ -130,11 +140,14 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    margin: 0% 10%;
+    margin: 0% 10% 3%;
     background-color: white;
     color:rgb(104, 167, 175);
-    font-weight: bolder;
-    padding: 8px 10px;
+    font-weight: bolder; 
+}
+
+.table-item p{
+    padding: 10px 40px ;
 }
 
 .table-item:nth-child(odd){
@@ -148,8 +161,9 @@ header{
 footer{
     display: flex;
     bottom: 0;
-    min-height: 22vh;
-    position: relative;
+    min-height: 200px;
+    width: 100%;
+    position: absolute;
     background-color: rgb(61, 41, 80);
     color: white;
     font-family: 'Lato', sans-serif;
@@ -177,7 +191,6 @@ footer{
 }
 
 .footersocialsstuff{
-    display: flex;
     padding-right: 5px;
     padding-left: 5px;
 }
@@ -189,6 +202,7 @@ footer{
     justify-content: space-around;
     align-items: flex-end;
     padding-bottom: 5px;
+    margin-top: 15px;
 }
 
 .footerbottomtext{
@@ -202,4 +216,218 @@ footer{
     border-radius: 10px;
     color: rgb(61, 41, 80);
     background-color: rgb(224, 224, 224); 
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 1000px){
+    .footerbottomtext{
+        font-size: small;
+    }
+
+    .input-search{
+        padding: 5px;
+        margin-top: 8%;
+        margin-bottom: 4%;
+    }
+
+    .input-search input{
+        margin-left: 10px;
+        color: rgb(150, 150, 150);
+        font-size: larger;
+        font-weight: bold
+    }
+
+    .input-search input::placeholder{
+        color: rgb(150, 150, 150);
+        font-size: large;
+        font-weight: bold
+    }
+
+    .table-item{
+        margin: 0% 10% 7%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .logoCompany img{
+        height: 50px;
+        width: 240px;
+        margin-left: 20px;
+    }
+    
+    .headerDroite{
+        margin-right: 20px;
+    }
+    
+    .nomPrenom{
+        padding-right: 8px;
+    }
+    
+    .profileButton img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .retourMenu{
+        font-size: x-large;
+    }
+
+    .main-title{
+        font-size: large;
+    }
+
+    .table-title{
+        font-size: large;
+        padding: 1% 10% 1%;
+    }
+
+    .table-item p{
+        padding: 5px 20px ;
+        font-size: small;
+    }
+    
+    footer{
+        min-height: 170px;
+    }
+
+    .texttop{
+        font-size: large;
+    }
+
+    .footerbottomtext{
+        font-size: xx-small;
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .logoCompany img{
+        height: 40px;
+        width: 190px;
+        margin-left: 10px;
+    }
+    
+    .headerDroite{
+        margin-right: 10px;
+    }
+    
+    .nomPrenom{
+        padding-right: 8px;
+    }
+
+    .nomPrenom{
+        font-size: small;
+    }
+
+    .table-title{
+        font-size: medium;
+    }
+
+    .table-item p{
+        font-size: x-small;
+    }
+
+    .input-search{
+        padding: 5px;
+        margin-top: 8%;
+        margin-bottom: 4%;
+    }
+
+    .input-search img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .input-search input{
+        margin-left: 8px;
+        font-size: medium;
+    }
+
+    .input-search input::placeholder{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .logoCompany img{
+        height: 30px;
+        width: 140px;
+        margin-left: 10px;
+    }
+    
+    .nomPrenom{
+        font-size: x-small;
+    }
+
+    .footerbottomtext{
+        font-size: 7.5px;
+    }
+
+    .texttop{
+        font-size: medium;
+    }
+
+    .footersocialsstuff{
+        font-size: small;
+    }
+    
+    .table-title{
+        font-size: small;
+    }
+
+    .input-search img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .input-search input{
+        margin-left: 8px;
+        font-size: small;
+    }
+
+    .input-search input::placeholder{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .profileButton img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .logoCompany img{
+        height: 25px;
+        width: 140px;
+        margin-left: 5px;
+    }
+
+    .headerDroite{
+        margin-right: 5px
+    }
+
+    .input-search input{
+        font-size: x-small;
+    }
+
+    .input-search input::placeholder{
+        font-size: x-small;
+    }
+
+    .texttop{
+        font-size: small;
+    }
+
+    .footersocialsstuff{
+        font-size: x-small;
+    }
+
+    .footerbottomtext{
+        font-size: 6px;
+    }
+
+    footer{
+        min-height: 130px;
+    }
 }
