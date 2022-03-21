@@ -4,18 +4,9 @@
 body{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    height: 50em;
     width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.mainclass{
-    min-height: 100%;
-    max-width: 100%;
-}
-
-p{
     margin: 0;
     padding: 0;
 }
@@ -41,7 +32,6 @@ header{
 }
 
 .nomPrenom{
-    font-family: 'Lato', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,6 +55,7 @@ header{
 
 .espace1{
     height: auto;
+    margin-top: 20px;
 }
 
 .retourMenu{
@@ -75,6 +66,81 @@ header{
     font-weight: bold;
     align-self: center;
     padding-left: 5%;
+}
+
+/*Search*/
+
+.input-search{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+
+.center-input{
+    display: flex;
+    justify-content: center;
+}
+
+.input-search img{
+    width: 50px;
+    position: relative;
+    margin-top: 2px;
+}
+
+.input-search input{
+    margin-left: 40px;
+    width: 100%;
+    font-size: 27px;
+    border: 0;
+    outline: 0;
+    background-color: rgb(224, 224, 224);
+    font-family: 'Lato', sans-serif;
+}
+
+.main-title{
+    color: rgb(61, 41, 80);
+    padding-left: 5%;
+    font-size: x-large;
+    margin-bottom: 2%;
+}
+
+/*Table*/
+ 
+.table{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0% 10%;
+}
+
+.table-title{
+    color: rgb(61, 41, 80);
+    font-size: x-large;
+}
+
+.table-results{
+    grid-column: 1/-1;
+}
+
+.table-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 0% 10%;
+    background-color: white;
+    color:rgb(104, 167, 175);
+    font-weight: bolder;
+    padding: 8px 10px;
+}
+
+.table-item:nth-child(odd){
+    background-color: rgb(104, 167, 175);
+    color: white;
+    font-weight: bolder;
 }
 
 /*Footer*/
@@ -123,8 +189,6 @@ footer{
     justify-content: space-around;
     align-items: flex-end;
     padding-bottom: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
 }
 
 .footerbottomtext{
