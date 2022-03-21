@@ -24,7 +24,7 @@ p{
 }
 
 a{
-    text-decoration: a;
+    text-decoration: none;
 }
 
 /*Header*/
@@ -90,6 +90,10 @@ header{
 .choice{
     display: flex;
     height: 19vh;
+    border-color: rgb(61, 41, 80);
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
     justify-content: center;
     align-items: center;
     font-size: xx-large;
@@ -179,8 +183,6 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
-    padding-right: 5px;
-    padding-left: 5px;
 }
 
 .footerbottomtext{
