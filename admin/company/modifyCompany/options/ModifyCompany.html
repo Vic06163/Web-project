@@ -21,19 +21,67 @@
         </header>
 
         <div class="mainbody">
-            <div class="optionchoosen">In this page, you only need to change the parameters that you want changed, fill the rest with the good informations</div>
             <div class="formbox">
-                <form class="formform">   
-                    <input type="text" name="name" id="name" placeholder="Company's Name" required="required" > 
+                <form class="formform">  
+                    <div class="optionchoosen">In this page, you only need to change the parameters that you want changed, fill the rest with the good informations</div>
+                    <div class="formformtop">
+                        <label class="field field_v1">
+                            <input class="field__input" placeholder="e.g.Google" required="required">
+                            <span class="field__label-wrap">
+                                <span class="field__label">Company's Name</span>
+                            </span>
+                        </label>
+                        <label class="field field_v1">
+                            <input class="field__input" placeholder="e.g. company@company.com" required="required">
+                            <span class="field__label-wrap">
+                                <span class="field__label">Email</span>
+                            </span>
+                        </label>
+                        <input type="date" name="creationdate" id="creationdate" required="required"> 
+                    </div>
+                    <div class="formformtop">
+                        <input class="descriptioninput" type="text" name="description" id="description" placeholder="Company's description" required="required">
+                    </div>
+                    <div class="formformbottom">
+                        <label class="field field_v1">
+                            <input class="field__input" placeholder="e.g. Technologic Services" required="required">
+                            <span class="field__label-wrap">
+                                <span class="field__label">Activity Area</span>
+                            </span>
+                        </label>
+                        <label class="field field_v1">
+                            <input class="field__input" placeholder="e.g. 257000000" required="required">
+                            <span class="field__label-wrap">
+                                <span class="field__label">Turnover</span>
+                            </span>
+                        </label>
+                        <label class="field field_v1">
+                            <input class="field__input" placeholder="e.g. 4" required="required">
+                            <span class="field__label-wrap">
+                                <span class="field__label">Nb of CESI students hired</span>
+                            </span>
+                        </label>
+                        <label class="field field_v1">
+                            <input class="field__input" placeholder="e.g. 72000" required="required">
+                            <span class="field__label-wrap">
+                                <span class="field__label">Nb of employees</span>
+                            </span>
+                        </label>
+                        <label class="field field_v1">
+                            <input class="field__input" placeholder="e.g. 7000000000" required="required">
+                            <span class="field__label-wrap">
+                                <span class="field__label">Nb of clients</span>
+                            </span>
+                        </label>
+                    </div>
+                    <!--<input type="text" name="name" id="name" placeholder="Company's Name" required="required" > 
                     <input type="email" name="mail" id="mail" placeholder="company@company.com" required="required" >                    
-                    <input type="date" name="creationdate" id="creationdate" required="required" > 
-                    <textarea type="text" name="description" id="description" placeholder="Company's description" required="required" ></textarea>
                     <input type="text" name="activity" id="activity" placeholder="Activity Area" required="required" > 
                     <input type="number" name="turnover" id="turnover" placeholder="Company's turnover" required="required" > 
                     <input type="number" name="CESI students hired" id="CESI students hired" placeholder="Number of CESI students hired" required="required" > 
                     <input type="number" name="employees" id="employees" placeholder="Company's employees" required="required" >                     
-                    <input type="number" name="clients" id="clients" placeholder="Company's clients"" required="required" > 
-                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <input type="number" name="clients" id="clients" placeholder="Company's clients"" required="required" >-->
+                    <input class="btnsubmit" type="submit" value="Modify">
                 </form>
             </div>
         </div>
