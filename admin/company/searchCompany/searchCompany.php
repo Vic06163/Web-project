@@ -32,36 +32,38 @@ if(!empty($_GET) && !empty($_GET['search'])){
     <link rel="stylesheet" type="text/css" href="searchCompany.css"> 
 </head>
 <body>
-    <header>
-        <a class="logoCompany" href="../../homeMenu/homeMenu.html"><img src="../../../pictures/Logo_company.png"></a>
-        <div class="headerDroite">
-            <a class="nomPrenom">Nom</a>
-            <a class="nomPrenom">Prenom</a>
-            <a class="profileButton" href="../../userInformations/userInformations.html"><img src="../../../pictures/Logo_login.png"></a>
-        </div>
-    </header>
-    <div class="espace1">
-        <a class="retourMenu" href="../../homeMenu/homeMenu.html"> ← Search a company </a>
-    </div>
-    <main class="main-content">
-        <div class="center-input">
-            <form method="get" class="input-search">   
-                <input type="text" name='search' id="search" placeholder="Look for a company">
-                <button type="submit" name="submit"><img src="../../../pictures/search_logo.png" for="search"></button>
-            </form>
-        </div>
-        <h2 class="main-title">Database Results</h2>
-        <div class="table">
-            <h3 class="table-title">Name</h3>
-            <h3 class="table-title">Businness sector</h3>
-        </div>
-        <div class="table-results">
-            <div class="table-item">
-                <p class="name">Test</p>
-                <p class="businness-sector">Test</p>
+    <div class="mainbody">
+        <header>
+            <a class="logoCompany" href="../../homeMenu/homeMenu.html"><img src="../../../pictures/Logo_company.png"></a>
+            <div class="headerDroite">
+                <a class="nomPrenom">Nom</a>
+                <a class="nomPrenom">Prenom</a>
+                <a class="profileButton" href="../../userInformations/userInformations.html"><img src="../../../pictures/Logo_login.png"></a>
             </div>
+        </header>
+        <div class="espace1">
+            <a class="retourMenu" href="../../homeMenu/homeMenu.html"> ← Search a company </a>
         </div>
-    </main>
+        <main class="main-content">
+            <div class="center-input">
+                <form method="get" class="input-search">   
+                    <input type="text" name='search' id="search" placeholder="Look for a company">
+                    <button type="submit" name="submit"><img src="../../../pictures/search_logo.png" for="search"></button>
+                </form>
+            </div>
+            <h2 class="main-title">Database Results</h2>
+            <div class="table">
+                <h3 class="table-title">Name</h3>
+                <h3 class="table-title">Businness sector</h3>
+            </div>
+            <div class="table-results">
+                <div class="table-item">
+                    <p class="name">Test</p>
+                    <p class="businness-sector">Test</p>
+                </div>
+            </div>
+        </main>
+    </div>
     <footer>
         <div class="footertop">
             <div class="texttop">
