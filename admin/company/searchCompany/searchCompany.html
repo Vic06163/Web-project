@@ -21,12 +21,10 @@
     </div>
     <main class="main-content">
         <div class="center-input">
-            <div class="input-search">
-                <label for="search">
-                    <img src="../../../pictures/search_logo.png">
-                </label>
+            <form class="input-search" method="GET">   
                 <input type="text" id="search" placeholder="Look for a company">
-            </div>
+                <button type="submit"><img src="../../../pictures/search_logo.png" for="search"></button>
+            </form>
         </div>
         <h2 class="main-title">Database Results</h2>
         <div class="table">
@@ -58,5 +56,6 @@
             </div>
         </div>
     </footer>
+    <script src="searchCompany.js"></script>
 </body>
 </html>
