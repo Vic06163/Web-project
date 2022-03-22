@@ -1,16 +1,10 @@
 <?php
-function getCompany(){
-    $bdd = new PDO('mysql:host=localhost:3307;dbname=stagesensor', 'root', 'root');
-    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    $req = $bdd->prepare('SELECT Nom, Secteur_activite FROM Entreprise WHERE Nom LIKE :search ORDER BY ID_entreprise ASC');
-    $req = $bdd->blindValue(':search', '%'.strip_tags($_POST['search']).'%', PDO::PARAM_STR);
-    $req->execute();
-    $data = $req->fetchAll(PDO::FETCH_OBJ);
-    return $data;
+$bdd = new PDO('mysql:host=localhost:3307;dbname=stagesensor', 'root', 'root');
+$companies = $bdd->query('SELECT Nom, Secteur_activite  FROM Entreprise ORDER BY ID_entreprise DESC');
+if(isset($_GET['search']) AND !empty($_GET['search'])){
+    $search = htmlspecialchars($_GET['search']);
+    $companies = $bdd->query('SELECT Nom, Secteur_activite  FROM Entreprise WHERE Nom LIKE "%'.$search.'%"');
 }
-
-$company = $getCompany();
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +32,7 @@ $company = $getCompany();
         <main class="main-content">
             <div class="center-input">
                 <form method="get" class="input-search">   
-                    <input type="text" name='search' id="search" placeholder="Look for a company">
+                    <input type="text" name='search' id="search" placeholder="Look for a company" autocomplete="off">
                     <button type="submit" name="submit"><img src="../../../pictures/search_logo.png" for="search"></button>
                 </form>
             </div>
@@ -49,8 +43,16 @@ $company = $getCompany();
             </div>
             <div class="table-results">
                 <div class="table-item">
-                    <p class="name">Test</p>
-                    <p class="businness-sector">Test</p>
+                <?php
+                    if($companies->rowCount() > 0){
+                        while($company = $companies->fetch()){
+                            ?><a class="name"  onclick=getCompany(); ><p><?= $company['Nom']; ?></p></a>
+                            <p class="businness-sector"><?= $company['Secteur_activite']; ?></p><?php
+                        }
+                    } else {
+                        ?><p>No results found</p><?php
+                    }
+                    ?>
                 </div>
             </div>
         </main>
