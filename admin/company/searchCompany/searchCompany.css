@@ -230,10 +230,7 @@ footer{
 /*Responsive*/
 
 @media screen and (max-width: 1000px){
-    .footerbottomtext{
-        font-size: small;
-    }
-
+    /*Main*/
     .input-search{
         padding: 5px;
         margin-top: 8%;
@@ -256,15 +253,15 @@ footer{
     .table-item{
         margin: 0% 10% 7%;
     }
+
+    /*Footer*/
+    .footerbottomtext{
+        font-size: small;
+    }
 }
 
 @media screen and (max-width: 600px){
-    .logoCompany img{
-        height: 50px;
-        width: 240px;
-        margin-left: 20px;
-    }
-    
+    /*Header*/
     .headerDroite{
         margin-right: 20px;
     }
@@ -282,6 +279,13 @@ footer{
         font-size: x-large;
     }
 
+    .logoCompany img{
+        height: 50px;
+        width: 240px;
+        margin-left: 20px;
+    }
+
+    /*Main*/
     .main-title{
         font-size: large;
     }
@@ -295,7 +299,8 @@ footer{
         padding: 5px 20px ;
         font-size: small;
     }
-    
+
+    /*Footer*/
     footer{
         min-height: 170px;
     }
@@ -311,6 +316,7 @@ footer{
 }
 
 @media screen and (max-width: 470px){
+    /*Header*/
     .logoCompany img{
         height: 40px;
         width: 190px;
@@ -323,12 +329,10 @@ footer{
     
     .nomPrenom{
         padding-right: 8px;
-    }
-
-    .nomPrenom{
         font-size: small;
     }
 
+    /*Main*/
     .table-title{
         font-size: medium;
     }
@@ -354,6 +358,7 @@ footer{
 }
 
 @media screen and (max-width: 400px){
+    /*Header*/
     .logoCompany img{
         height: 30px;
         width: 140px;
@@ -368,14 +373,7 @@ footer{
         font-size: 7.5px;
     }
 
-    .texttop{
-        font-size: medium;
-    }
-
-    .footersocialsstuff{
-        font-size: small;
-    }
-    
+    /*Main*/
     .table-title{
         font-size: small;
     }
@@ -388,9 +386,19 @@ footer{
     .input-search input::placeholder{
         font-size: small;
     }
+
+    /*Footer*/
+    .texttop{
+        font-size: medium;
+    }
+
+    .footersocialsstuff{
+        font-size: small;
+    }
 }
 
 @media screen and (max-width: 330px){
+    /*Header*/
     .profileButton img{
         height: 30px;
         width: 30px;
@@ -406,6 +414,7 @@ footer{
         margin-right: 5px
     }
 
+    /*Main*/
     .input-search input{
         font-size: x-small;
     }
@@ -414,6 +423,7 @@ footer{
         font-size: x-small;
     }
 
+    /*Footer*/
     .texttop{
         font-size: small;
     }
