@@ -76,21 +76,24 @@ header{
     justify-content: center;
     align-items: center;
     font-family: 'Lato', sans-serif;
-    height: 5vh;
+    font-size: large;
+    height: 4vh;
 }
 
 .formbox{
     display: flex;
     justify-content: center;
-    min-width: 80vh;
-    height: 66vh;
+    height: 67vh;
 }
 
 .formform{
     display: flex;
     flex-direction: column;
+    width: 40vw;
     justify-content: space-evenly;
 }
+
+
 
 textarea{
     justify-content: center;
