@@ -34,13 +34,14 @@
     <h1>Test Company</h1>
     <div class="content">    
         <div class="scroll"
-        style="overflow-x: hidden; overflow-y: scroll; border:#000000 1px solid; width: 500px; height: 500px;">
+        style="overflow-x: hidden; overflow-y: scroll; border:#000000 1px solid;">
         avis 1 senvsnqvnzbpZBV
         </div>
         <div class="review">
-        <h2>Your Mark</h2>
-            <div id="full-stars-example-two">
-                <div class="rating-group">
+        <h2>Your Review :</h2>
+            <div
+                <form class="rating-group">
+                    
                         <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating3-none"
                         value="0" type="radio">
                         <label aria-label="1 star" class="rating__label" for="rating3-1"><i
@@ -58,16 +59,13 @@
                         <label aria-label="5 stars" class="rating__label" for="rating3-5"><i
                                 class="rating__icon rating__icon--star fa fa-star"></i></label>
                         <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
-                </div>
+                        <input type="text" class="review" placeholder="Express yourself">
+                </form>
                 <p class="desc" style="font-family: sans-serif; font-size:0.9rem">Full stars<br />
                 Must select a star value</p>
             </div>
         </div>
     </div>
-        <form>
-            <div class="filter">Filtre</div>
-
-        </form>
     </main>
 </div>
         <footer>

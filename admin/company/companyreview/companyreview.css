@@ -4,6 +4,7 @@
 body{
     display: flex;
     flex-direction: column;
+    font-family: 'Lato', sans-serif;
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -81,27 +82,35 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: aqua;
+  margin-bottom: 1em;
+  background-color: blue;
 }
 
 .content{
   display: flex;
   flex-direction: row;
-  background-color: blueviolet;
-  
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+
+.scroll{
+  width:700px;
+  height:500px;
+}
+
+h2{
+  font-size: 3em;
 }
 
 .review{
-  background-color: blue;
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-self: center;
-  
 }
  
   /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
-  .rating-group {
+  .stars {
     display: inline-flex;
   }
   
@@ -125,7 +134,7 @@ main{
   .rating__label {
     cursor: pointer;
     padding: 0 0.1em;
-    font-size: 2rem;
+    font-size: 5em;
   }
   
   /* set default star color */
