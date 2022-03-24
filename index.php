@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stage Sensor</title>
-    <link rel="stylesheet" type="text/css" href="logIn.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
 </head>
-
 <body>
     <div class="page">
-        
         <div class="corp">
             <header>
                 <div class="logo">
@@ -23,20 +20,24 @@
             <div class="Internship">
                 <h3>Find an internship with Stage sensor</h3>
             </div>
-            <form action="" method="get" class="form1">
+            <form action="login.php" method="POST" class="form1">
+                <?php
+                if(isset($_GET['error'])){
+                    ?><p class="error"><?php echo($_GET['error']) ?></p><?php
+                }
+                ?>
                 <div class="e-mailtextbox">
-                    <h4>Enter e-mail address</h4>
-                    <input type="email" id="e-mail" required>
+                    <h4>Enter username</h4>
+                    <input type="text" id="e-mail" name='username'>
                 </div>
                 <div class="passwordtextbox">
                     <h4>Enter password</h4>
-                    <input type="password" id="password">
+                    <input type="password" id="password" name='password'>
                 </div>
                 <div class="signinbutton">
-                    <input class="signin" type="submit" value="Sign In" required>
+                    <input class="signin" type="submit" name='submit' value="Sign In">
                 </div>
             </form>
-
         </div>
     </div>
         <footer>
@@ -46,8 +47,8 @@
                 </div>
                 <div class="footersocials">
                     <p class="footersocialsstuff">Find us on social media:</p>
-                    <a class="footersocialsstuff" href="https://www.linkedin.com/in/stage-sensor/"><img src="../../../pictures/logo_linkedin.png" height="30px" width="30px"></a>
-                    <a class="footersocialsstuff" href="https://www.instagram.com/stagesensor/"><img src="../../../pictures/logo_instagram.png" height="30px" width="30px"></a>
+                    <a class="footersocialsstuff" href="https://www.linkedin.com/in/stage-sensor/"><img src="pictures/logo_linkedin.png" height="30px" width="30px"></a>
+                    <a class="footersocialsstuff" href="https://www.instagram.com/stagesensor/"><img src="pictures/logo_instagram.png" height="30px" width="30px"></a>
                 </div>
                 <div class="footerbottom">
                     <a class="footerbottomtext" href="footerPages/gethelp.html">Get help</a>
@@ -57,6 +58,5 @@
                 </div>
             </div>
         </footer>
-    
 </body>
 </html>
