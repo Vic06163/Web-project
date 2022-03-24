@@ -1,4 +1,0 @@
-getCompany()
-{
-    print("Yo");
-}

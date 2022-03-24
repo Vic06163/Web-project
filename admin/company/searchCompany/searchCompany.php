@@ -75,6 +75,5 @@ if(isset($_GET['search']) AND !empty($_GET['search'])){
             </div>
         </div>
     </footer>
-    <script src="searchCompany.js"></script>
 </body>
 </html>
