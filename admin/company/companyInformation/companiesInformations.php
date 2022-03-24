@@ -1,3 +1,7 @@
+<?php
+$bdd = new PDO('mysql:host=localhost:3307;dbname=stagesensor', 'root', '');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +14,9 @@
 </head>
 
 <body>
-    <main>
+    <main class="mainclass">
     <header>
-        <input class="logoCompany" href="../../../student/homeMenu.html" type="image" id="image" src="../../../pictures/Logo_company.png" alt="STAGE SENSOR corporate logo">
+        <a class="logoCompanyLink" href="../../homeMenu/homeMenu.html" ><img class="logoCompany" src="../../../pictures/Logo_company.png" alt="STAGE SENSOR corporate logo"></a>
         <div class="headerDroite">
             <a class="nomPrenom">Nom</a>
             <a class="nomPrenom">Prenom</a>
@@ -22,7 +26,7 @@
 
     <!--<div class="ecran">-->
     <div class="espace1">
-        <a style="text-decoration:none" class="retourMenu" href="../../../student/homeMenu.html"> ← Home Menu </a>
+        <a style="text-decoration:none" class="retourMenu" href="../../homeMenu/homeMenu.html"> ← Home Menu </a>
     </div>
     <div class="espace2">
         <div class="maps">
@@ -43,23 +47,31 @@
     </div>
     <div class="espace4">
         <div class="sousdiv">
-            <p class="statname">Number of employees</p>
-            <p class="statvalue2">12</p>
+            <div class="statname"><p>Number of employees</p></div>
+            <div class="statname2"><p>Creation of the company</p></div>
+            <div class="statname"><p>Number of clients</p></div>
+            <div class="statname2"><p>Number of CESI students hired</p></div>
         </div>
         <div class="sousdiv">
-            <p class="statname2">Creation of the company</p>
-            <p class="statvalue">6</p>
-        </div>
-        <div class="sousdiv">
-            <p class="statname">Number of clients</p>
-            <p class="statvalue2">101</p>
-        </div>
-        <div class="sousdiv">
-            <p class="statname2">Number of CESI students hired</p>
-            <p class="statvalue">66</p>
+            <div class="statvalue2">
+                <p>
+                </p>
+            </div>
+            <div class="statvalue">
+                <p></p>   
+            </div>
+            <div class="statvalue2">
+                <p></p>
+            </div>
+            <div class="statvalue">
+                <p></p>
+            </div>
         </div>
     </div>
-    </main class="mainclass">
+
+    <?php $employeesnb = $bdd->query("SELECT Nombre_employe FROM entreprise");
+                    echo $employeesnb; ?>
+    </main>
 
     <footer>
         <div class="footertop">
