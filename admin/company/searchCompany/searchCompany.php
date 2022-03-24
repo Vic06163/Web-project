@@ -3,7 +3,7 @@ $bdd = new PDO('mysql:host=localhost:3307;dbname=stagesensor', 'root', 'root');
 $companies = $bdd->query('SELECT Nom, Secteur FROM Entreprise ORDER BY IDentreprise DESC');
 if(isset($_GET['search']) AND !empty($_GET['search'])){
     $search = htmlspecialchars($_GET['search']);
-    $companies = $bdd->query('SELECT Nom, Secteur  FROM Entreprise WHERE Nom LIKE "%'.$search.'%"');
+    $companies = $bdd->query('SELECT Nom, Secteur FROM Entreprise WHERE Nom LIKE "%'.$search.'%"');
 }
 ?>
 
@@ -44,9 +44,9 @@ if(isset($_GET['search']) AND !empty($_GET['search'])){
             <div class="table-results">
                 <div class="table-item">
                 <?php
-                if(isset($companies)){
+                if($companies->rowCount() > 0){
                     while($company = $companies->fetch()){
-                        ?><a class="name"  onclick=getCompany(); ><p><?= $company['Nom']; ?></p></a>
+                        ?><a class="name"  href="https://fr.wikipedia.org/wiki/<?= $company['Nom'] ?>"><p><?= $company['Nom']; ?></p></a>
                         <p class="businness-sector"><?= $company['Secteur']; ?></p><?php
                     }
                 } else {
