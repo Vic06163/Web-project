@@ -1,3 +1,7 @@
+<?php
+$bdd = new PDO('mysql:host=localhost:3307;dbname=stagesensor', 'root', '');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,12 +53,24 @@
             <div class="statname2"><p>Number of CESI students hired</p></div>
         </div>
         <div class="sousdiv">
-            <div class="statvalue2"><p>12</p></div>
-            <div class="statvalue"><p>2012</p></div>
-            <div class="statvalue2"><p>101</p></div>
-            <div class="statvalue"><p>20</p></div>
+            <div class="statvalue2">
+                <p>
+                </p>
+            </div>
+            <div class="statvalue">
+                <p></p>   
+            </div>
+            <div class="statvalue2">
+                <p></p>
+            </div>
+            <div class="statvalue">
+                <p></p>
+            </div>
         </div>
     </div>
+
+    <?php $employeesnb = $bdd->query("SELECT Nombre_employe FROM entreprise");
+                    echo $employeesnb; ?>
     </main>
 
     <footer>
