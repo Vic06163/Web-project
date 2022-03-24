@@ -139,7 +139,7 @@ header{
 
 .infocompany{
     display: flex;
-    min-height: 98%;
+    justify-content: center;
     align-items: center;
     width: 66%;
     margin-left: 2%; 
@@ -149,7 +149,6 @@ header{
     margin-top: 1%;
     margin-bottom: 1%;
     font-family: 'Lato', sans-serif;
-    justify-content: center;
     background-color: rgba(25, 125, 138, 0.50);
     border-radius: 10px;
 }
@@ -171,47 +170,70 @@ header{
     display: flex;
     font-family: 'Lato', sans-serif;
     height: 50%;
+    text-align: center;
     align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .espace4{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 25%; 
 }
 
 .sousdiv{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    height: 50%;
     align-items: center;
-    width: 25%;
 }
 
 .statname{
+    display: flex;
     font-family: 'Lato', sans-serif;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.statname p{
     background-color: rgba(25, 125, 138, 0.50);
     border-radius: 10px;
-    padding: 5%;
+    padding: 10px;
 }
 
 .statname2{
+    display: flex;
     font-family: 'Lato', sans-serif;
+    justify-content: center;
+    width: 25%;
 }
 
 .statvalue{
+    display: flex;
     font-family: 'Lato', sans-serif;
     font-size: xx-large;
     font-weight: bold;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.statvalue p{
     background-color: rgba(61, 41, 80, 0.50);
     border-radius: 10px;
-    padding: 5%;
+    padding: 10px;
 }
 
 .statvalue2{
+    display: flex;
+    width: 25%;
     font-family: 'Lato', sans-serif;
     font-size: xx-large;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Footer*/
@@ -260,8 +282,6 @@ footer{
     justify-content: space-around;
     align-items: flex-end;
     padding-bottom: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
 }
 
 .footerbottomtext{
