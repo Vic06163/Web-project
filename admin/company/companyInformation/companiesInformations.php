@@ -68,7 +68,6 @@ $bdd = new PDO('mysql:host=localhost:3307;dbname=stagesensor', 'root', '');
             </div>
         </div>
     </div>
-
     <?php $employeesnb = $bdd->query("SELECT Nombre_employe FROM entreprise");
                     echo $employeesnb; ?>
     </main>
