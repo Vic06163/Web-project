@@ -8,45 +8,44 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-
 }
-
 
 .page{
     display: flex;
     flex-direction: row;
     justify-content: center; 
-
 }
-
-
 
 h2, h3{
     margin:0px;
 }
 
+p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: a;
+}
 
 .corp{
     display: flex;
     flex-direction: column ;
-    justify-content:space-around;
-    
+    justify-content:space-around; 
 }
 
-.logo {
+.logo{
     display: flex;
     justify-content: center;   
     margin-top: 50px;
-    
 }
 
-
-.welcome {
+.welcome{
     display: flex;
     font-size: 1em;
     margin-left: 2%;
-    margin-top: 2em;
-
+    margin-top: 80px;
 }
 
 .Internship{
@@ -76,21 +75,18 @@ h4{
     margin-left: 4%;
     margin-right: 4%;
     height: 2em;
-
 }
 
 .signinbutton{
     margin-top:2%;
     display: flex;
     justify-content: center;
-    
-
 }
 
 .signin{
     color: white;
     background-color: rgb(61, 41, 80);
-    border-radius: 50px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,23 +98,23 @@ h4{
 
 .signin:hover{
     color: white;
-    background-color: rgb(37, 14, 58);
+    background-color: rgb(105, 67, 139);
 }
 
-#textbox {
-    font-size: 20px;
-    width: 350px;
-    margin-bottom: 20px;
-    border-width: 3px;
-    border-color: rgb(61, 41, 80);
+.error{
+    background-color: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 4%;
+    width: 200px;
 }
 
-#signIn {
+#signIn{
     display: flex;
     justify-content: center;
     font-size: 25px;
     padding: 5px;
-    margin-top: 40px;
     border-radius: 10px;
     border-width: 3px;
     width: 110px;
@@ -127,17 +123,11 @@ h4{
     border-color: rgb(61, 41, 80);
 }
 
+.signinbutton{
+    margin-top: 60px;
+}
 
 /*Footer*/
-
-p{
-    margin: 0;
-    padding: 0;
-}
-
-a{
-    text-decoration: a;
-}
 
 footer{
     display: flex;
