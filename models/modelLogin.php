@@ -5,9 +5,9 @@ function getBdd() {
     return $bdd;
 }
 
-function getUsers($username, $password) {
+function getUsers($username) {
     $bdd = getBdd();
-    $users = $bdd->query('SELECT * FROM utilisateur WHERE `Identifiant` = ' . $username . 'AND `MDP` = ' . $password . '');
+    $users = $bdd->query('SELECT * FROM utilisateur WHERE `Identifiant` = ' . $username . '');
     return $users;
 }
 

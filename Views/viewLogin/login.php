@@ -21,7 +21,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
         header("Location: viewLogin.php?error=Password is required");
         exit();
     } else{
-        $sql = getUsers($username, $password);
+        $sql = getUsers($username);
         $query = mysqli_query($bdd, $sql);
 
         if(mysqli_num_rows($query)){
