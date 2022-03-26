@@ -60,3 +60,9 @@
         </footer>
 </body>
 </html>
+
+
+
+<?php foreach ($users as $user): ?>
+                <h1><?= $user['Identifiant'] ?></h1>
+                <?php endforeach; ?>
