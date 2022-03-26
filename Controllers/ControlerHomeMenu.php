@@ -1,16 +1,17 @@
 <?php
 
 //Call the model
-require 'models/Model.php';
+require '../models/modelHomeMenu.php';
 
 //
-function login(){
+/* function login(){
     $users = getUsers();
     require 'views/viewLogin.php';
-}
+} */
 
 function homemenu(){
-    $lastoffer
+    $lastoffer = getLastoffer();
+    require '../Views/viewHomeMenu/viewHomeMenu.php';
 }
 
 ?>

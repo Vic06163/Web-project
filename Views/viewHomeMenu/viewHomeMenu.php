@@ -11,4 +11,4 @@
 <!-- Page body -->
 
 <?php $contenu = ob_get_clean(); ?>
-<?php require 'Views/template.php' ?>
+<?php require '../template.php' ?>
