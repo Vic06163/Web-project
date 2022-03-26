@@ -1,16 +1,12 @@
 <?php
 
 //Call the model
-require 'models/Model.php';
+require 'models/modelLogin.php';
 
-//
 function login(){
     $users = getUsers();
-    require 'views/viewLogin.php';
+    require 'Views/viewLogin/viewLogin.php';
 }
 
-function homemenu(){}
-
 ?>
-
 
