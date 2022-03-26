@@ -1,6 +1,8 @@
 <?php
 
 //call the Controler
-require 'Controllers/ControlerLogin.php';
+require 'Controllers/ControlerCompany.php';
+
+search();
 
 ?>

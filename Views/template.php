@@ -11,7 +11,7 @@
     <body>
         <div class="mainbody">
             <header>
-                <a class="logoCompany" href=""><img src="pictures/Logo_company.png"></a>
+                <a class="logoCompany" href=""><img src="../../pictures/Logo_company.png"></a>
             </header>
             <div>
                 <?= $contenu ?>
@@ -24,8 +24,8 @@
                     </div>
                     <div class="footersocials">
                         <p class="footersocialsstuff">Find us on social media:</p>
-                        <a class="footersocialsstuff" href="https://www.linkedin.com/in/stage-sensor/"><img src="pictures/logo_linkedin.png" height="30px" width="30px"></a>
-                        <a class="footersocialsstuff" href="https://www.instagram.com/stagesensor/"><img src="pictures/logo_instagram.png" height="30px" width="30px"></a>
+                        <a class="footersocialsstuff" href="https://www.linkedin.com/in/stage-sensor/"><img src="../../pictures/logo_linkedin.png" height="30px" width="30px"></a>
+                        <a class="footersocialsstuff" href="https://www.instagram.com/stagesensor/"><img src="../../pictures/logo_instagram.png" height="30px" width="30px"></a>
                     </div>
                     <div class="footerbottom">
                         <a class="footerbottomtext" href="footerPages/gethelp.html">Get help</a>
