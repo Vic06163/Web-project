@@ -2,12 +2,12 @@
 
 body{
     font-family: 'Lato', sans-serif;
-    /* background-color: rgb(255, 255, 255);
-    */ display: flex;
+    background-color: rgb(255, 255, 255);
+    display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    flex: 1 0 auto;
 }
 
 .page{
@@ -23,6 +23,10 @@ h2, h3{
 p{
     margin: 0;
     padding: 0;
+}
+
+.header{
+    display: none;
 }
 
 a{
@@ -128,13 +132,12 @@ h4{
 }
 
 /*Footer*/
-
 footer{
     display: flex;
-    bottom: 0;
-    min-height: 22vh;
+    min-height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
-    position: fixed;
     background-color: rgb(61, 41, 80);
     color: white;
     font-family: 'Lato', sans-serif;
@@ -144,6 +147,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 100%;
     width: 100%;
 }
 
@@ -156,12 +160,13 @@ footer{
 .footersocials{
     display: flex;
     flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
     justify-content: center;
     align-items: center;
 }
 
 .footersocialsstuff{
-    display: flex;
     padding-right: 5px;
     padding-left: 5px;
 }
@@ -172,8 +177,6 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
-    padding-right: 5px;
-    padding-left: 5px;
 }
 
 .footerbottomtext{
@@ -188,3 +191,54 @@ footer{
     color: rgb(61, 41, 80);
     background-color: rgb(224, 224, 224); 
 }
+
+/*Responsive*/
+@media screen and (max-width: 1000px){
+    .footerbottomtext{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 600px){
+    footer{
+        min-height: 170px;
+    }
+
+    .texttop{
+        font-size: large;
+    }
+
+    .footerbottomtext{
+        font-size: xx-small;
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .texttop{
+        font-size: medium;
+    }
+
+    .footersocialsstuff{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .texttop{
+        font-size: small;
+    }
+
+    .footersocialsstuff{
+        font-size: x-small;
+    }
+
+    .footerbottomtext{
+        font-size: 6px;
+    }
+
+    footer{
+        min-height: 130px;
+    }
+}
+
