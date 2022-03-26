@@ -1,20 +1,18 @@
 <?php
 
 function getBdd() {
-    $bdd = new PDO('mysql:host=localhost:3307;dbname=stagesensor', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $bdd = new PDO('mysql:host=localhost;dbname=stagesensor', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
     return $bdd;
 }
-
-/* function getUsers() {
+function getLastoffers() {
     $bdd = getBdd();
-    $users = $bdd->query('SELECT Identifiant FROM utilisateur');
-    return $users;
-} */
-
-function getLastoffer() {
-    $bdd = getBdd();
-    $lastoffer = $bdd->query('SELECT Titre FROM offre ORDER BY date desc Limit 1');
-    return $lastoffer;
+    $lastoffers = $bdd->query('SELECT Titre FROM offre LIMIT 1, ORDER BY Date');
+    return $lastoffers;
 }
 
+function getUsers() {
+    $bdd = getBdd();
+    $users = $bdd->query('SELECT Titre FROM offre');
+    return $users;
+}
 ?>

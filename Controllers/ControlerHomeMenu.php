@@ -4,14 +4,12 @@
 require '../models/modelHomeMenu.php';
 
 //
-/* function login(){
-    $users = getUsers();
-    require 'views/viewLogin.php';
-} */
-
 function homemenu(){
-    $lastoffer = getLastoffer();
+    $users = getUsers();
+    $lastoffers = getLastoffers();
     require '../Views/viewHomeMenu/viewHomeMenu.php';
 }
+
+
 
 ?>
