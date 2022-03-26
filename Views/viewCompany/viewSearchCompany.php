@@ -1,6 +1,6 @@
 <?php $titre = "Search Company"; ?>
 <?php ob_start(); ?>
-        <link rel="stylesheet" href="css/company/searchCompany.css">
+        <link rel="stylesheet" href="Stage-Sensor\css\company\searchCompany.css">
         <div class="espace1">
             <a class="retourMenu" href=""> ← Home Menu </a>
         </div>
@@ -19,4 +19,4 @@
             
         </main>
 <?php $contenu = ob_get_clean(); ?>
-<?php require 'Views/template.php' ?>
+<?php require '../template.php' ?>

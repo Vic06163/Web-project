@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Adapter la page a différentes tailles d'écran -->
-        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="../../css/template.css">
         <title><?= $titre ?></title>
         <script src="https://kit.fontawesome.com/ab00dd9f8c.js" crossorigin="anonymous"></script>   
         <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- Gérer les compatibilités entre les différents navigateurs -->
