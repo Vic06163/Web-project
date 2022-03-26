@@ -3,8 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="template.css">
-        <link rel="stylesheet" href=<?= $css ?> />
+        <link rel="stylesheet" href="css/template.css">
         <title><?= $titre ?></title>
         <script src="https://kit.fontawesome.com/ab00dd9f8c.js" crossorigin="anonymous"></script>
 

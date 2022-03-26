@@ -1,8 +1,8 @@
-<?php $css ="css/login.css"; ?>
 <?php $titre = "Stage Sensor"; ?>
 <?php ob_start(); ?>
 
 <!-- Page body -->
+<link rel="stylesheet" href="css/test.css">
 
 <?php foreach ($users as $user): ?>
     <h1><?= $user['Identifiant'] ?></h1>
