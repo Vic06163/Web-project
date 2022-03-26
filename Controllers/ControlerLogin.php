@@ -9,6 +9,8 @@ function login(){
     require 'views/viewLogin.php';
 }
 
+function homemenu(){}
+
 ?>
 
 
