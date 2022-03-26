@@ -7,10 +7,10 @@ function getBdd() {
     return $bdd;
 }
 
-function getUsers() {
+function getCompanies() {
     $bdd = getBdd();
-    $users = $bdd->query('SELECT Identifiant FROM utilisateur');
-    return $users;
+    $companiesSearch = $bdd->query('SELECT Nom FROM entreprise');
+    return $companiesSearch;
 }
 
 ?>
