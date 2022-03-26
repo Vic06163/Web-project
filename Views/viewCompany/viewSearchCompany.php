@@ -1,7 +1,8 @@
 <?php $titre = "Search Company"; ?>
 <?php ob_start(); ?>
+        <link rel="stylesheet" href="css/company/searchCompany.css">
         <div class="espace1">
-            <a class="retourMenu" href="../../homeMenu/homeMenu.html"> ← Home Menu </a>
+            <a class="retourMenu" href=""> ← Home Menu </a>
         </div>
         <main class="main-content">
             <div class="center-input">
@@ -15,20 +16,7 @@
                 <h3 class="table-title">Name</h3>
                 <h3 class="table-title">Businness sector</h3>
             </div>
-            <!-- <div class="table-results">
-                <div class="table-item">
-                <?php
-                if($companies->rowCount() > 0){
-                    while($company = $companies->fetch()){
-                        ?><a class="name"  href="https://fr.wikipedia.org/wiki/<?= $company['Nom'] ?>"><p><?= $company['Nom']; ?></p></a>
-                        <p class="businness-sector"><?= $company['Secteur']; ?></p><?php
-                    }
-                } else {
-                    ?><p>No results found</p><?php
-                }
-                ?>
-                </div>
-            </div> -->
+            
         </main>
 <?php $contenu = ob_get_clean(); ?>
-<?php require 'template.php' ?>
+<?php require 'Views/template.php' ?>

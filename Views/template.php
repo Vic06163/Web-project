@@ -7,7 +7,6 @@
         <title><?= $titre ?></title>
         <script src="https://kit.fontawesome.com/ab00dd9f8c.js" crossorigin="anonymous"></script>   
         <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- Gérer les compatibilités entre les différents navigateurs -->
-        <link rel="stylesheet" type="text/css" href="companyreview.css">
     </head>
     <body>
         <div class="mainbody">
