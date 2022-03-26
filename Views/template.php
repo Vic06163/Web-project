@@ -2,21 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Adapter la page a différentes tailles d'écran -->
         <link rel="stylesheet" href="css/template.css">
         <title><?= $titre ?></title>
-        <script src="https://kit.fontawesome.com/ab00dd9f8c.js" crossorigin="anonymous"></script>
-
-
-
-        
-        <!-- Adapter la page a différentes tailles d'écran -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Gérer les compatibilités entre les différents navigateurs -->
-        <title>Stage Sensor</title>
+        <script src="https://kit.fontawesome.com/ab00dd9f8c.js" crossorigin="anonymous"></script>   
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- Gérer les compatibilités entre les différents navigateurs -->
         <link rel="stylesheet" type="text/css" href="companyreview.css">
-        
-
     </head>
     <body>
         <div class="mainbody">
