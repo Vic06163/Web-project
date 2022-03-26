@@ -1,7 +1,7 @@
 <?php
 
 //call the Controler
-require 'Controllers/ControlerCompany.php';
+require '../Controllers/ControlerCompany.php';
 
 search();
 

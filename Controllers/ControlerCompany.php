@@ -1,10 +1,10 @@
 <?php
 
-require 'models/modelCompany.php';
+require '../models/modelCompany.php';
 
 function search(){
     $companiesSearch = getCompanies();
-    require 'Views/viewSearchCompany.php';
+    require '../Views/viewSearchCompany.php';
 }
     
 ?>
