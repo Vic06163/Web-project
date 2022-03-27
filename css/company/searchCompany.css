@@ -15,42 +15,6 @@ a{
     text-decoration: none;
 }
 
-/*Header*/
-
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    background-color: rgb(224, 224, 224);       
-}
-
-.logoCompany img{
-    height: 60px;
-    width: 290px;
-    margin-left: 40px;
-}
-
-.headerDroite{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 40px;
-}
-
-.nomPrenom{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:rgb(25, 125, 138);
-    padding-right: 10px;
-}
-
-.profileButton img{
-    height: 50px;
-    width: 50px;
-}
 
 /*Body*/
 
@@ -167,71 +131,6 @@ header{
     background-color: rgb(104, 167, 175);
     color: white;
     font-weight: bolder;
-}
-
-/*Footer*/
-
-.mainbody{
-    flex: 1 0 auto;
-}
-
-footer{
-    display: flex;
-    flex-shrink: 0;
-    min-height: 200px;
-    width: 100%;
-    background-color: rgb(61, 41, 80);
-    color: white;
-    font-family: 'Lato', sans-serif;
-}
-
-.footertop{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 100%;
-}
-
-.texttop{
-    font-size: x-large;
-    font-weight: 500;
-    align-self: center;
-}
-
-.footersocials{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.footersocialsstuff{
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-.footerbottom{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    padding-bottom: 5px;
-    margin-top: 15px;
-}
-
-.footerbottomtext{
-    text-decoration: none;
-    display: flex;
-    width: 18%;
-    justify-content: center;
-    font-size: large;
-    font-weight: 600;
-    padding: 7px;
-    border-radius: 10px;
-    color: rgb(61, 41, 80);
-    background-color: rgb(224, 224, 224); 
 }
 
 /*Responsive*/

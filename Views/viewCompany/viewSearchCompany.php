@@ -8,7 +8,7 @@
     <div class="center-input">
         <form method="get" class="input-search">   
             <input value="" type="text" name='search' id="search" placeholder="Look for a company" autocomplete="off">
-            <button type="submit" name="submit"><img src="../../pictures/search_logo.png" for="search"></button>
+            <button type="submit" name="submit"><img src="..\pictures\search_logo.png" for="search"></button>
         </form>
     </div>
     <h2 class="main-title">Database Results</h2>
@@ -21,7 +21,7 @@
             <?php
                 if($companiesSearch->rowCount() > 0){
                     while($cs = $companiesSearch->fetch()){
-                        ?><p><?= $cs['Nom']; ?></p>
+                        ?><a class="name" href="https://fr.wikipedia.org/wiki/<?= $cs['Nom'] ?>"><p><?= $cs['Nom']; ?></p></a>
                         <p><?= $cs['Secteur']; ?></p><?php
                         /* if($companiesSearch->rowCount() = 0){
                             break;
