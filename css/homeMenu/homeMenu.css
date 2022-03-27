@@ -103,7 +103,10 @@ header{
 
 /* last offer */
 
-.
+.lastcompany{
+    display: flex;
+    justify-content: center;
+}
 
 /*tuto part */
 
