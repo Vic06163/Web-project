@@ -3,11 +3,64 @@
 
 
 <!-- Page body -->
-<link rel="stylesheet" href="../css/homeMenu/reset.css">
+<!-- <link rel="stylesheet" href="../css/homeMenu/reset.css"> -->
 <link rel="stylesheet" href="../css/homeMenu/homeMenu.css">
 
 <section class="menu">
-        <ul>
+    <div class="dropdown-1">
+        <button>Candidacy</button>
+        <div class="content">
+            <a href="../candidacy/wish-list/wish-list.html">See wish-list</a>
+            <a href="../candidacy/jobApplied/jobApplied.html">Job you applied for</a>
+        </div>
+    </div>
+    <div class="dropdown-2">
+        <button>Student</button>
+        <div class="content">
+            <a href="../student/searchStudent/searchStudent.html">Search a student</a>
+            <a href="../student/createStudent/createStudent.html">Create a student profile</a>
+            <a href="../student/editDeleteStudent/editDeleteStudent.html">Edit or delete a profile</a>
+        </div>
+    </div>
+    <div class="dropdown-3">
+        <button>Class president</button>
+        <div class="content">
+            <a href="../classPresident/searchClassPresident/searchClassPresident.html">Search a class president</a>
+            <a href="../classPresident/createClassPresident/createClassPresident.html">Create a class president profile</a>
+            <a href="../classPresident/editDeleteClassPresident/editDeleteClassPresident.html">Edit or delete a profile</a>
+        </div>
+    </div>
+    <div class="dropdown-4">
+        <button>Pilot</button>
+        <div class="content">
+            <a href="../pilot/searchPilot/searchPilot.html">Search a pilot</a>
+            <a href="../pilot/createPilot/createPilot.html">Create a pilot profile</a>
+            <a href="../pilot/editDeletePilot/editDeletePilot.html">Edit or delete a profile</a>
+        </div>
+    </div>
+    <div class="dropdown-5">
+        <button>Internship offer</button>
+        <div class="content">
+            <a href="../internshipOffer/searchOffer/searchOffer.html">Search an offer</a>
+            <a href="../internshipOffer/createOffer/createOffer.html">Create an offer</a>
+            <a href="../internshipOffer/editDeleteOffer/editDeleteOffer.html">Edit or delete an offer</a>
+        </div>
+    </div>
+    <div class="dropdown-6">
+        <button>Company</button>
+        <div class="content">
+            <a href="../company/searchCompany/searchCompany.php">Search a company</a>
+            <a href="">Evaluate a business</a>
+            <a href="">Create a company</a>
+            <a href="">Edit or delete a company</a>
+        </div>
+    </div>
+
+
+
+
+
+        <!-- <ul>
             <li>
                 <a href="">Candidacy</a>
                 <ul class="hidden">
@@ -92,7 +145,7 @@
                     </li>
                 </ul>
             </li>
-        </ul>
+        </ul> -->
     </section>
     <section class="lastcompany">
         <h1>Latest Internship Offer :</h1>

@@ -27,12 +27,226 @@ a{
 /*  menu  */
 
 .menu{
+    display: flex;
     font-size: x-large;
     background-color: rgb(61, 41, 80);
+    margin-top: 0%;
+    justify-content: space-evenly;
+}
+
+.menu button{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu .content{
+    display: none;
+}
+
+/* Menu Candidacy */
+.menu .dropdown-1{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.menu .dropdown-1:hover{
+    background-color: #197D8A;
+}
+
+.menu .dropdown-1:hover .content{
+    top: 89px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #197D8A;
+    width: 150%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.menu .dropdown-1:hover .content a{
+    color: black;
+    font-size: 100%;
+    padding: 20px 20px;
+}
+
+/* Menu Student */
+
+.menu .dropdown-2{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.menu .dropdown-2:hover{
+    background-color: #197D8A;
+}
+
+.menu .dropdown-2:hover .content{
+    top: 89px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #197D8A;
+    width: 150%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.menu .dropdown-2:hover .content a{
+    color: black;
+    font-size: 100%;
+    padding: 20px 20px;
+}
+
+/* Menu Class President */
+
+.menu .dropdown-3{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.menu .dropdown-3:hover{
+    background-color: #197D8A;
+}
+
+.menu .dropdown-3:hover .content{
+    top: 89px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #197D8A;
+    width: 150%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.menu .dropdown-3:hover .content a{
+    color: black;
+    font-size: 100%;
+    padding: 20px 20px;
+}
+
+/* Menu Pilot */
+
+.menu .dropdown-4{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.menu .dropdown-4:hover{
+    background-color: #197D8A;
+}
+
+.menu .dropdown-4:hover .content{
+    top: 89px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #197D8A;
+    width: 150%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.menu .dropdown-4:hover .content a{
+    color: black;
+    font-size: 100%;
+    padding: 20px 20px;
+}
+
+/* Menu Internship offer */
+
+.menu .dropdown-5{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.menu .dropdown-5:hover{
+    background-color: #197D8A;
+}
+
+.menu .dropdown-5:hover .content{
+    top: 89px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #197D8A;
+    width: 150%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.menu .dropdown-5:hover .content a{
+    color: black;
+    font-size: 100%;
+    padding: 20px 20px;
+}
+
+/* Menu Company */
+
+.menu .dropdown-6{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.menu .dropdown-6:hover{
+    background-color: #197D8A;
+}
+
+.menu .dropdown-6:hover .content{
+    top: 89px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #197D8A;
+    width: 150%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.menu .dropdown-6:hover .content a{
+    color: black;
+    font-size: 100%;
+    padding: 20px 20px;
+}
+
+
+
+/* .menu ul{
+    margin-top: 0%;
 }
 
 .menu li{
     display: inline-block;
+    
     position: relative;
     text-align: center;
     width: 250px;
@@ -61,7 +275,7 @@ a{
 .hidden li:hover a{
     background-color: white;
     color:#2c94a1;
-}
+} */
 
 /*  body */ 
 
