@@ -95,10 +95,21 @@
         </ul>
     </section>
     <section class="lastcompany">
-
-    <?php foreach ($lastoffers as $lastoffer): ?>
-    <h1><?= $lastoffer['Titre'] ?></h1>
-    <?php endforeach; ?> 
+        <h1>Latest Internship Offer :</h1>
+        <div class="alr">
+            <?php foreach ($lastoffers as $lastoffer): ?>
+            <div class="alc">
+                <h2><?= $lastoffer['Titre'] ?></h2>
+                <h2>Date : <?= $lastoffer['Date'] ?></h2>
+                <h2>Sector : <?= $lastoffer['Secteur'] ?></h2>
+                <h2>Duration : <?= $lastoffer['Duree'] ?></h2>
+                <h2>Looking for <?= $lastoffer['Nbplaces'] ?> students</h2>
+            </div>
+            <div class ="alc2">
+                <h2><?= $lastoffer['Competences'] ?></h2>
+            </div>
+        </div>
+        <?php endforeach; ?> 
 
     </section>
     <section class="tuto">
