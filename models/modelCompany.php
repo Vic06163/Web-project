@@ -9,7 +9,11 @@ function getBdd() {
 
 function getCompanies() {
     $bdd = getBdd();
-    $companiesSearch = $bdd->query('SELECT Nom FROM entreprise');
+    $companiesSearch = $bdd->query('SELECT Nom, Secteur FROM entreprise ORDER BY IDentreprise DESC');
+    if(isset($_GET['search']) AND !empty($_GET['search'])){
+        $search = htmlspecialchars($_GET['search']);
+        $companiesSearch = $bdd->query('SELECT Nom, Secteur FROM Entreprise WHERE Nom LIKE "%'.$search.'%"');
+    }
     return $companiesSearch;
 }
 
