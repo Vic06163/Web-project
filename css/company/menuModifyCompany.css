@@ -30,7 +30,22 @@ a{
     font-family: 'Lato', sans-serif;
 }
 
-/*body*/
+/*Body*/
+
+.espace1{
+    height: auto;
+    margin-top: 20px;
+}
+
+.retourMenu{
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    color: rgb(61, 41, 80);
+    font-size: 200%;
+    font-weight: bold;
+    align-self: center;
+    margin-left: 5%;
+}
 
 .optionchoosen{
     display: flex;
@@ -40,7 +55,7 @@ a{
     font-size: large;
     height: 4vh;
     padding-bottom: 2vh;
-    width: 100vw;
+    width: 50vw;
     font-weight: bold;
     font-size: x-large;
     color: rgb(61, 41, 80);
@@ -239,4 +254,46 @@ a{
 
 textarea{
     justify-content: center;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1200px){
+    .optionchoosen{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .formformbottom{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px){
+    footer{
+        min-height: 170px;
+    }
+
+    .texttop{
+        font-size: large;
+    }
+
+    .footerbottomtext{
+        font-size: xx-small;
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .optionchoosen{
+        font-size: medium;
+    }
+
+    .formformtop{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
