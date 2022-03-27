@@ -21,7 +21,7 @@
                 <div class="Internship">
                     <h3>Find an internship with Stage sensor</h3>
                 </div>
-                <form action="Views/login/login.php" method="POST" class="form1">
+                <form action="ControlerLogin.php" method="POST" class="form1">
                     <?php
                     if(isset($_GET['error'])){
                         ?><p class="error"><?php echo($_GET['error']) ?></p><?php
