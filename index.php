@@ -1,7 +1,5 @@
 <?php
 
-//call the Controler
-require 'Controllers/ControlerLogin.php';
+require_once 'C:\www\Stage-Sensor\Views\viewLogin\viewLogin.php';
 
-//ask for the login
-login();
+?>
