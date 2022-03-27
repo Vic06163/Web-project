@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body{
-    font-family: 'Lato', sans-serif;
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    width: 100%;
     margin: 0;
     padding: 0;
     flex: 1 0 auto;
+    background-color: rgb(255, 255, 255);
 }
 
 .page{
     display: flex;
     flex-direction: row;
     justify-content: center; 
+}
+
+.mainbody{
+    flex: 1 0 auto;
 }
 
 h2, h3{
@@ -23,10 +29,6 @@ h2, h3{
 p{
     margin: 0;
     padding: 0;
-}
-
-.header{
-    display: none;
 }
 
 a{
@@ -42,7 +44,7 @@ a{
 .logo{
     display: flex;
     justify-content: center;   
-    margin-top: 50px;
+    margin-top: 15%;
 }
 
 .welcome{
