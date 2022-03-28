@@ -26,7 +26,8 @@ a{
 
 /*  menu  */
 
-.menu{
+
+/*.menu{
     display: flex;
     font-size: x-large;
     background-color: rgb(61, 41, 80);
@@ -53,7 +54,7 @@ a{
 }
 
 /* Menu Candidacy */
-.menu .dropdown-1{
+/*.menu .dropdown-1{
     display: flex;
     flex-direction: column;
     position: relative; 
@@ -85,7 +86,7 @@ a{
 
 /* Menu Student */
 
-.menu .dropdown-2{
+/*.menu .dropdown-2{
     display: flex;
     flex-direction: column;
     position: relative; 
@@ -116,7 +117,7 @@ a{
 
 /* Menu Class President */
 
-.menu .dropdown-3{
+/*.menu .dropdown-3{
     display: flex;
     flex-direction: column;
     position: relative; 
@@ -147,7 +148,7 @@ a{
 
 /* Menu Pilot */
 
-.menu .dropdown-4{
+/*.menu .dropdown-4{
     display: flex;
     flex-direction: column;
     position: relative; 
@@ -178,7 +179,7 @@ a{
 
 /* Menu Internship offer */
 
-.menu .dropdown-5{
+/*.menu .dropdown-5{
     display: flex;
     flex-direction: column;
     position: relative; 
@@ -209,7 +210,7 @@ a{
 
 /* Menu Company */
 
-.menu .dropdown-6{
+/*.menu .dropdown-6{
     display: flex;
     flex-direction: column;
     position: relative; 
@@ -240,7 +241,7 @@ a{
 
 
 
-/* .menu ul{
+ .menu ul{
     margin-top: 0%;
 }
 
