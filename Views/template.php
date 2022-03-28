@@ -4,6 +4,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Adapter la page a différentes tailles d'écran -->
         <link rel="stylesheet" href="../css/template.css">
+          <!-- Chrome --> 
+        <link rel="icon" sizes="192x192" href="icon.png"><link rel="apple-touch-icon" href="ios-icon.png">
+  <!-- Safari --> 
+        <link rel="apple-touch-startup-image" href="icon.png">
+  <!-- IE --> 
+        <meta name="msapplication-square310x310logo" content="icon_largetile.png"> 
+  <!-- Chrome --> 
+        <meta name="theme-color" content="#4285f4"> 
+  <!-- Safari --> 
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="manifest" href="/manifest.webmanifest">
         <title><?= $titre ?></title>
         <script src="https://kit.fontawesome.com/ab00dd9f8c.js" crossorigin="anonymous"></script>   
         <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- Gérer les compatibilités entre les différents navigateurs -->

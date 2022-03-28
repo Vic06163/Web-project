@@ -19,9 +19,10 @@ function searchCompanies() {
 
 function createCompanies(){
     $bdd = getBdd();
-    $test='non';
+    $test='';
+    $buttonclicked = '0';
     if(isset($_GET['create'])){
-        $test='oui';
+        $buttonclicked = '1';
         $name = htmlspecialchars($_GET['name']);
         $mail = htmlspecialchars($_GET['mail']);
         $creationdate = htmlspecialchars($_GET['creationdate']);
@@ -30,24 +31,26 @@ function createCompanies(){
         $turnover = htmlspecialchars($_GET['turnover']);
         $cesi = htmlspecialchars($_GET['cesi']);
         $employees = htmlspecialchars($_GET['employees']);
-        $clients = htmlspecialchars($_GET['clients']);
-        echo $name;
-        echo $clients;
+        /* echo $name;
+        echo $mail;
+        echo $creationdate;
+        echo $description;
+        echo $activity;
+        echo $turnover;
+        echo $cesi;
+        echo $employees; */
     }
-    else{
-        $test='non';
-    }
-    $sql = "INSERT INTO 'entreprise' ('Nom', 'Email', 'Datecreation', 'Description', 'Secteur', 'Chiffre', 'Stagiaire', 'Nbemploye', 'Nbclient') VALUES (:name, :mail, :creationdate, :description, :activity, :turnover, :cesi, :employees, :clients)";
+    $sql = "INSERT INTO entreprise (Nom, Email, Datecreation, Description, Secteur, Chiffre, Stagiaire, Nbemploye) VALUES ('$name', '$mail', '$creationdate', '$description', '$activity', '$turnover', '$cesi', '$employees')";
     $res = $bdd->prepare($sql);
-    $exec = $res->execute(array(":name"=>$name,":mail"=>$mail,":creationdate"=>$creationdate,":description"=>$description,":activity"=>$activity,":turnover"=>$turnover,":cesi"=>$cesi,":employees"=>$employees,":clients"=>$clients,));
+    $exec = $res->execute();
 
     if($exec){
-        echo 'Données insérées';
-      }else{
-        echo "Échec de l'opération d'insertion";
-      }
+        $test = 'Données récupérées et insérées correctement';
+    }
+    else{
+        $test = 'Erreur de la récupération des données';
+    }
 
-/*     $bdd->query('INSERT INTO 'entreprise' ('Nom', 'Email', 'Datecreation', 'Description', 'Secteur', 'Chiffre', 'Stagiaire', 'Nbemploye', 'Nbclient') VALUES ());    */    
     return $test;
 }
 

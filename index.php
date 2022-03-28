@@ -1,5 +1,5 @@
 <?php
 
-require_once 'C:\www\Stage-Sensor\Views\viewLogin\viewLogin.php';
+require_once '\Views\viewLogin\viewLogin.php';
 
 ?>
