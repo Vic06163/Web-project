@@ -4,8 +4,10 @@
 
 <!-- Page body -->
 <!-- <link rel="stylesheet" href="../css/homeMenu/reset.css"> -->
+<head>
 <link rel="stylesheet" href="../css/homeMenu/homeMenu.css">
-
+</head>
+<!-- 
 <head>
       <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -62,8 +64,8 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
-
-<!--    <div class="dropdown-1">
+ --><div class="menu">
+    <div class="dropdown-1">
         <button>Candidacy</button>
         <div class="content">
             <a href="../candidacy/wish-list/wish-list.html">See wish-list</a>
@@ -111,11 +113,11 @@
             <a href="">Edit or delete a company</a>
         </div>
     </div>
+</div>
 
 
 
-
-
+<!-- 
          <ul>
             <li>
                 <a href="">Candidacy</a>
@@ -201,8 +203,8 @@
                     </li>
                 </ul>
             </li>
-        </ul> -->
-    </section>
+        </ul>
+    </section> -->
 </header>
     <section class="lastcompany">
         <h1>Latest Internship Offer :</h1>
