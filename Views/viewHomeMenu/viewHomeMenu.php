@@ -4,9 +4,67 @@
 
 <!-- Page body -->
 <!-- <link rel="stylesheet" href="../css/homeMenu/reset.css"> -->
+<head>
 <link rel="stylesheet" href="../css/homeMenu/homeMenu.css">
+</head>
+<!-- 
+<head>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<section class="menu">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<header>
+    
+  <div class="page">
+    <nav id="colorlib-main-nav" role="navigation">
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+      <div class="js-fullheight colorlib-table">
+        <div class="img" style="background-image: url(images/bg_3.jpg);"></div>
+        <div class="colorlib-table-cell js-fullheight">
+          <div class="row no-gutters">
+            <div class="col-md-12 text-center">
+              <h1 class="mb-4"><a href="index.html" class="logo">Company Logo</a></h1>
+              <ul>
+                <li class="active"><a href="index.html"><span>Home</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="blog.html"><span>Blog</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="colorlib-page">
+      <header>
+        <div class="container">
+          <div class="colorlib-navbar-brand">
+            <a class="colorlib-logo" href="index.html">Company Logo</a>
+          </div>
+          <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+        </div>
+      </header>
+
+      <section class="hero-wrap js-fullheight">
+
+      </section>
+
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+ --><div class="menu">
     <div class="dropdown-1">
         <button>Candidacy</button>
         <div class="content">
@@ -55,12 +113,12 @@
             <a href="">Edit or delete a company</a>
         </div>
     </div>
+</div>
 
 
 
-
-
-        <!-- <ul>
+<!-- 
+         <ul>
             <li>
                 <a href="">Candidacy</a>
                 <ul class="hidden">
@@ -145,8 +203,9 @@
                     </li>
                 </ul>
             </li>
-        </ul> -->
-    </section>
+        </ul>
+    </section> -->
+</header>
     <section class="lastcompany">
         <h1>Latest Internship Offer :</h1>
         <div class="alr">
@@ -159,6 +218,7 @@
                 <h2>Looking for <?= $lastoffer['Nbplaces'] ?> students</h2>
             </div>
             <div class ="alc2">
+                <h2>Competences required : </h2>
                 <h2><?= $lastoffer['Competences'] ?></h2>
             </div>
         </div>
