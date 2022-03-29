@@ -267,6 +267,7 @@ textarea{
 @media screen and (max-width: 1200px){
     .optionchoosen{
         text-align: center;
+        font-size: medium;
     }
 }
 
@@ -294,7 +295,11 @@ textarea{
 
 @media screen and (max-width: 600px){
     .optionchoosen{
-        font-size: medium;
+        font-size: small;
+    }
+
+    .retourMenu{
+        font-size: x-large;
     }
 
     .formformtop{

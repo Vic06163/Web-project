@@ -14,7 +14,7 @@
         <meta name="theme-color" content="#4285f4"> 
   <!-- Safari --> 
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="manifest" href="/manifest.webmanifest">
+        <link rel="manifest" href="/Manifest.json">
         <title><?= $titre ?></title>
         <script src="https://kit.fontawesome.com/ab00dd9f8c.js" crossorigin="anonymous"></script>   
         <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- Gérer les compatibilités entre les différents navigateurs -->
