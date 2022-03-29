@@ -14,7 +14,15 @@
         <meta name="theme-color" content="#4285f4"> 
   <!-- Safari --> 
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="manifest" href="/Manifest.json">
+        <link rel="manifest" href="../Manifest.json">
+        <link rel="manifest" href="manifest.json">
+        <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('ServiceWorker.js')
+            .then((sw)=>console.log('ServiceWorker registration successful with scope', sw))
+            .catch((err)=>console.log('ServiceWorker registration failed', err));
+        }
+        </script>
         <title><?= $titre ?></title>
         <script src="https://kit.fontawesome.com/ab00dd9f8c.js" crossorigin="anonymous"></script>   
         <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- Gérer les compatibilités entre les différents navigateurs -->
