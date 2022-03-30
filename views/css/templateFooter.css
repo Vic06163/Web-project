@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+    
+.mainbody{
+    flex: 1 0 auto;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    min-height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: rgb(61, 41, 80);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.footertop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+.texttop{
+    font-size: x-large;
+    font-weight: 500;
+    align-self: center;
+}
+
+.footersocials{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footersocialsstuff{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.footerbottom{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.footerbottomtext{
+    text-decoration: none;
+    display: flex;
+    width: 18%;
+    justify-content: center;
+    font-size: large;
+    font-weight: 600;
+    padding: 7px;
+    border-radius: 10px;
+    color: rgb(61, 41, 80);
+    background-color: rgb(224, 224, 224); 
+}
+
+/*Responsive*/
+@media screen and (max-width: 1000px){
+    .footerbottomtext{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 600px){
+    footer{
+        min-height: 170px;
+    }
+
+    .texttop{
+        font-size: large;
+    }
+
+    .footerbottomtext{
+        font-size: xx-small;
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .texttop{
+        font-size: medium;
+    }
+
+    .footersocialsstuff{
+        font-size: small;
+    }
+
+    .footerbottomtext{
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .texttop{
+        font-size: small;
+    }
+
+    .footersocialsstuff{
+        font-size: x-small;
+    }
+
+    footer{
+        min-height: 130px;
+    }
+}
+
+

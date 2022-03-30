@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: 1 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.mainbody{
+    flex: 1 0 auto;
+}
+
+h2, h3{
+    margin:0px;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: a;
+}
+
+.corp{
+    display: flex;
+    flex-direction: column ;
+    justify-content:space-around; 
+}
+
+.logo{
+    display: flex;
+    justify-content: center;   
+    margin-top: 15%;
+}
+
+.welcome{
+    display: flex;
+    font-size: 1em;
+    margin-left: 2%;
+    margin-top: 80px;
+}
+
+.Internship{
+    display:flex;
+    font-size: 0.7em;
+    margin-left: 2.3%;
+    margin-top:1em;
+    margin-bottom: 3%;
+}
+
+.e-mailtextbox, .passwordtextbox{
+    display: flex;
+    flex-direction: column;
+}
+
+h4{
+    margin-top: 4%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+}
+
+#password, #e-mail{
+    background-color: white;
+    border-color: rgb(61, 41, 80);
+    border-radius: 5px;
+    border-width: 2px;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 2em;
+}
+
+.signinbutton{
+    margin-top:2%;
+    display: flex;
+    justify-content: center;
+}
+
+.signin{
+    color: white;
+    background-color: rgb(61, 41, 80);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 8em;
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.signin:hover{
+    color: white;
+    background-color: rgb(105, 67, 139);
+}
+
+.error{
+    background-color: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 4%;
+    width: 300px;
+}
+
+#signIn{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    border-width: 3px;
+    width: 110px;
+    font-weight: bold;
+    color: rgb(61, 41, 80);
+    border-color: rgb(61, 41, 80);
+}
+
+.signinbutton{
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 800px){
+    .logo img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .logo img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .logo img{
+        width: 300px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .logo img{
+        width: 200px;
+    }
+}

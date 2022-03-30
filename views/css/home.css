@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Nav bar*/
+#nav{
+    background-color: rgb(199, 199, 199);
+}
+
+#home{
+    border-radius: 10px;
+}
+
+#toggle{
+    border-radius: 10px;
+}
+
+/*Elements*/
+.mainbody{
+    flex: 1 0 auto;
+}
+
+.Elements{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; 
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(61, 41, 80);
+}
+
+.welcome{
+    font-weight: bolder;
+}
+
+.logout{
+    padding: 8px;
+    background-color: #197D8A;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.logout a{
+    color: white;
+}
+
+.logout a:hover{
+
+    text-decoration: none;
+    color: rgb(224, 224, 224)
+}
+
+/* last offer */
+
+.lastcompany{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;  
+}
+
+.lastcompany h1 {
+    font-size: 2.5em;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.lastcompany h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.alr {
+    display: flex;
+    flex-direction: row;
+}
+
+.alc {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border: solid;
+    border-color: #197D8A;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 0;
+    background-image: linear-gradient(to top, #408a94, #78a5b6, #acc0d2, #d9dee9, #ffffff);
+    color: rgb(61,41,80);
+    
+}
+
+.alc2 {
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    padding: 2em;
+    border: solid;
+    border-color: #197D8A;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 0;
+    background-image: linear-gradient(to top, #408a94, #78a5b6, #acc0d2, #d9dee9, #ffffff);
+    color: rgb(61,41,80);
+}
+
+/*tuto part */
+
+.tuto{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    font-family: 'Lato', sans-serif;
+    margin: 50px;
+}
+
+.tuto div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 20%;
+    height: 100px;
+    background-color: rgb(224, 224, 224);
+    text-align: left;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.tuto h3{
+    color: rgb(61, 41, 80);
+    font-weight: bolder;
+    font-size: 20px;
+    max-width: 200px;
+    margin-right: 10px;
+}
+
+.imageTuto{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imageTuto:hover{
+    filter: brightness(2);
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    min-height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: rgb(61, 41, 80);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.footertop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+.texttop{
+    font-size: x-large;
+    font-weight: 500;
+    align-self: center;
+}
+
+.footersocials{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footersocialsstuff{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.footerbottom{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.footerbottom a:hover{
+    text-decoration: none;
+    color: rgb(61, 41, 80);
+}
+
+.footerbottomtext{
+    text-decoration: none;
+    display: flex;
+    width: 18%;
+    justify-content: center;
+    font-size: large;
+    font-weight: 600;
+    padding: 7px;
+    border-radius: 10px;
+    color: rgb(61, 41, 80);
+    background-color: rgb(224, 224, 224); 
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 1750px){
+    .tuto h3{
+        font-size: 15px;
+    }
+
+    .imageTuto{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .lastcompany h1 {
+        font-size: 25px;
+        font-weight:bold;
+    }
+
+    .imageTuto{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .footerbottomtext{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .tuto div{
+        width: 25%; 
+    }
+}
+
+@media screen and (max-width: 750px){
+    .lastcompany h1 {
+        font-size: 20px;
+    }
+    
+    .lastcompany h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .alr{
+        display: column;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .alc{
+        max-width: 210px;
+        background-image: none;
+        border-right: solid;
+        border-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 20px;
+        border-color: #197D8A;
+        background-color: rgb(25,125,138);
+        padding: 1em;
+        color: white;
+    }
+
+    .alc2{
+        max-width: 210px;
+        background-image: none;
+        border-top: 0;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+        border-left: solid;
+        border-color: #197D8A;
+        background-color: rgb(25,125,138);
+        padding: 1em;
+        color: white;
+    }
+
+    .tuto div{
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+    }
+
+    .tuto h3{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .lastcompany h1 {
+        font-size: 15px;
+    }
+
+    footer{
+        min-height: 170px;
+    }
+
+    .texttop{
+        font-size: large;
+    }
+
+    .footerbottomtext{
+        font-size: xx-small;
+        width: 15%;
+    }
+
+    .imageTuto{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .tuto div{
+        height: 150px; 
+    }
+}
+
+@media screen and (max-width: 400px){
+    .texttop{
+        font-size: medium;
+    }
+
+    .footersocialsstuff{
+        font-size: small;
+    }
+
+    .footerbottomtext{
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .texttop{
+        font-size: small;
+    }
+
+    .footersocialsstuff{
+        font-size: x-small;
+    }
+
+    footer{
+        min-height: 130px;
+    }
+}
+
