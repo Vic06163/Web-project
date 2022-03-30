@@ -98,9 +98,4 @@ function doModifyDatabase(){
     return $resultQuery;      
 }
 
-/* function GetInternshipsOffers(){
-    $bdd = getBdd();
-    $internshipsOffers = $bdd->query(SELECT * FROM offre);
-} */
-
 ?>
