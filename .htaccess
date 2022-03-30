@@ -1,7 +1,7 @@
-RewriteEngine On
+#RewriteEngine On
 
-AuthType Basic
-AuthName "Restricted Content"
-AuthUserFile C:\www\StageSensor\.htpasswd
-Require valid-user
+#AuthType Basic
+#AuthName "Restricted Content"
+#AuthUserFile C:\www\StageSensor\.htpasswd
+#Require valid-user
 
