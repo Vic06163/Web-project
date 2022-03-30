@@ -17,41 +17,90 @@ function searchCompanies() {
     return $companiesSearch;
 }
 
-function createCompanies(){
+function doModifyDatabase(){
     $bdd = getBdd();
-    $test='';
-    $buttonclicked = '0';
-    // if(isset($_GET['create'])){
-    //     $buttonclicked = '1';
-    //     $name = htmlspecialchars($_GET['name']);
-    //     $mail = htmlspecialchars($_GET['mail']);
-    //     $creationdate = htmlspecialchars($_GET['creationdate']);
-    //     $description = htmlspecialchars($_GET['description']);
-    //     $activity = htmlspecialchars($_GET['activity']);
-    //     $turnover = htmlspecialchars($_GET['turnover']);
-    //     $cesi = htmlspecialchars($_GET['cesi']);
-    //     $employees = htmlspecialchars($_GET['employees']);
-    //     /* echo $name;
-    //     echo $mail;
-    //     echo $creationdate;
-    //     echo $description;
-    //     echo $activity;
-    //     echo $turnover;
-    //     echo $cesi;
-    //     echo $employees; */
-    // }
-    // $sql = "INSERT INTO entreprise (Nom, Email, Datecreation, Description, Secteur, Chiffre, Stagiaire, Nbemploye) VALUES ('$name', '$mail', '$creationdate', '$description', '$activity', '$turnover', '$cesi', '$employees')";
-    // $res = $bdd->prepare($sql);
-    // $exec = $res->execute();
+    $resultQuery='';
+    if(isset($_GET['create'])){
+        $name = htmlspecialchars($_GET['name']);
+        $mail = htmlspecialchars($_GET['mail']);
+        $creationdate = htmlspecialchars($_GET['creationdate']);
+        $description = htmlspecialchars($_GET['description']);
+        $activity = htmlspecialchars($_GET['activity']);
+        $turnover = htmlspecialchars($_GET['turnover']);
+        $cesi = htmlspecialchars($_GET['cesi']);
+        $employees = htmlspecialchars($_GET['employees']);
 
-    // if($exec){
-    //     $test = 'Données récupérées et insérées correctement';
-    // }
-    // else{
-    //     $test = 'Erreur de la récupération des données';
-    // }
+        $sql = "INSERT INTO entreprise (Nom, Email, Datecreation, Description, Secteur, Chiffre, Stagiaire, Nbemploye) VALUES ('$name', '$mail', '$creationdate', '$description', '$activity', '$turnover', '$cesi', '$employees')";
+        $res = $bdd->prepare($sql);
+        $exec = $res->execute();
 
-    // return $test;
+        if($exec){
+            $resultQuery = 'Insertion des données réussie';
+        }
+        else{
+            $resultQuery = "Echec de l'insertion des données";
+        }
+    }
+    else if(isset($_GET['modify'])){
+        $name = htmlspecialchars($_GET['name']);
+        $mail = htmlspecialchars($_GET['mail']);
+        $creationdate = htmlspecialchars($_GET['creationdate']);
+        $description = htmlspecialchars($_GET['description']);
+        $activity = htmlspecialchars($_GET['activity']);
+        $turnover = htmlspecialchars($_GET['turnover']);
+        $cesi = htmlspecialchars($_GET['cesi']);
+        $employees = htmlspecialchars($_GET['employees']);
+
+        $sql = "UPDATE entreprise SET 
+        Email = '$mail',
+        Datecreation = '$creationdate',
+        Description = '$description',
+        Secteur = '$activity',
+        Chiffre = '$turnover',
+        Stagiaire = '$cesi',
+        Nbemploye = '$employees'
+        WHERE Nom = '$name'";
+
+        $res = $bdd->prepare($sql);
+        $exec = $res->execute();
+
+        if($exec){
+            $resultQuery = 'Modification des données réussie';
+        }
+        else{
+            $resultQuery = "Echec de la modfication des données";
+        }
+    }
+    else if(isset($_GET['delete'])){
+        $name = htmlspecialchars($_GET['name']);
+        $mail = htmlspecialchars($_GET['mail']);
+        $creationdate = htmlspecialchars($_GET['creationdate']);
+        $description = htmlspecialchars($_GET['description']);
+        $activity = htmlspecialchars($_GET['activity']);
+        $turnover = htmlspecialchars($_GET['turnover']);
+        $cesi = htmlspecialchars($_GET['cesi']);
+        $employees = htmlspecialchars($_GET['employees']);
+
+        $sql = "DELETE FROM entreprise WHERE Nom = '$name'";
+        $res = $bdd->prepare($sql);
+        $exec = $res->execute();
+
+        if($exec){
+            $resultQuery = 'Suppression des données réussie';
+        }
+        else{
+            $resultQuery = "Echec de la suppression des données";
+        }
+    }
+    else{
+        $resultQuery = "---";
+    } 
+    return $resultQuery;      
 }
+
+/* function GetInternshipsOffers(){
+    $bdd = getBdd();
+    $internshipsOffers = $bdd->query(SELECT * FROM offre);
+} */
 
 ?>
